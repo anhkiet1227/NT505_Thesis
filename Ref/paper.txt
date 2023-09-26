@@ -1,0 +1,78 @@
+Here is a draft introduction for your IEEE formatted paper on using sidechains and machine learning to analyze blockchain transactions:
+
+Title: Using Sidechains and Machine Learning to Detect Anomalous Transactions in Blockchains 
+
+Abstract: Blockchains are distributed ledgers that enable secure peer-to-peer transactions without a central authority. However, their transparency also enables analysis of transaction patterns that may reveal illicit or undesirable activity. This paper proposes using sidechains, smaller blockchains pegged to a parent blockchain, to transfer transaction data to a private environment where machine learning can be applied to detect anomalous transactions. This allows analysis to be conducted privately while leveraging the security and decentralization of public blockchains.
+
+I. Introduction
+
+Blockchain technology provides a decentralized, transparent, and secure method to record transactions and other data in a distributed ledger [1]. The transparency of public blockchains like Bitcoin and Ethereum enables analysis of the recorded data for various purposes such as fraud detection, market analysis, and compliance [2]. However, performing such analytics directly on the public blockchain poses privacy risks. 
+
+Sidechains present a solution for transferring data from a parent blockchain to an environment better suited for analysis [3]. A sidechain is a separate blockchain linked to and secured by the parent blockchain via a two-way peg. Assets can be transferred between the parent chain and sidechain via the peg. This enables transaction data to be moved to a sidechain that has restricted visibility, providing privacy for analysis.
+
+Once the transaction data is on the sidechain, analytics and machine learning algorithms can be run to detect anomalous transactions. Machine learning is well-suited for identifying patterns in blockchain data that may indicate illegal transactions, theft, fraud, or other undesirable activity [4]. By combining sidechains and machine learning, blockchain transaction analysis can be conducted both securely and privately. 
+
+This paper proposes a system architecture that uses sidechains and machine learning for detecting anomalous transactions...
+
+
+Here is a draft related work section building on the introduction:
+
+II. Related Work
+
+Several studies have explored using sidechains for transferring blockchain data to a private environment. Gazi et al. [3] designed a sidechain mechanism based on HTLCs (Hashed Timelock Contracts) for creating private sidechains pegged to the Ethereum blockchain. Their system aimed to enable privacy-preserving smart contracts. Hyperledger Cactus by Pokhrel et al. [5] integrates permissioned blockchains such as Hyperledger Fabric as sidechains to public blockchains. This allows enterprises to leverage public blockchain security while maintaining control and privacy. 
+
+Sidechains built using drivechains, notary schemes, and relay networks have also been proposed for assets like Bitcoin [6]. Drivechains allow miners of the parent blockchain to vote on the final state of the sidechain. Notary schemes use a federation of validators to facilitate transfers between chains. Relay networks relay blocks between sidechains, although security is dependent on the relays acting honestly.
+
+For machine learning analysis of blockchain transactions, previous work has applied various techniques. Chen et al. [7] used locally-connected neural networks to analyze Bitcoin wallet relationships and detect illegal financial transactions. Bartoletti et al. [8] developed a Bitcoin transaction classifier using random forests and achieved 98% accuracy in detecting Ponzi schemes. LSTM models were able to effectively classify Ethereum smart contracts by legitimate versus fraudulent based on sequential opcode data [9]. 
+
+GAN-based approaches have also shown promise for generating synthetic blockchain transaction data to augment training data and increase model robustness [10]. However, research is still limited on applying machine learning specifically to transactions on sidechains for anomaly detection. Our proposed model aims to advance work in this domain by combining sidechain transaction data with deep learning and ensemble methods.
+
+Here is a draft proposal for the system architecture:
+
+III. Proposed System
+
+We propose a system that utilizes sidechains and machine learning to enable private analysis of blockchain transactions, as shown in Fig. 1. There are two key components - the sidechain transfer mechanism and the machine learning model for anomaly detection.
+
+A. Sidechain Transfer
+
+The first component is the sidechain which allows transfers of blockchain transaction data to a private environment. We build a simple prototype sidechain based on a proof-of-authority model with a consortium of trusted nodes managing block validation and consensus. The sidechain has restricted read access to prevent public visibility of the transferred transaction data.
+
+Transfers between the parent public blockchain and the sidechain are facilitated by a two-way peg mechanism. Users can send send standard blockchain transactions that lock assets on the parent chain while minting equivalent representations of those assets on the sidechain. The reverse can be done to transfer assets back to the parent blockchain and unlock the original assets.
+
+B. Machine Learning Model
+
+Once the transaction data is available on the private sidechain, we apply machine learning algorithms to analyze the transactions and detect anomalies. 
+
+We propose a model combining LSTM, CNN, and random forest classifiers. The LSTM and CNN operate on the sequential transaction data to extract temporal and spatial features respectively. The features are combined and passed to a random forest classifier for the final prediction of whether a transaction is anomalous or not.
+
+The model is trained on sample benign and anomalous transaction data. Anomalies are simulated based on known fraudulent patterns. The combined deep learning and ensemble approach aims to build a robust model for detecting unknown anomalous transactions.
+Here are some additional details on blockchain, machine learning algorithms, and sidechain transfers:
+
+Blockchain:
+- Public blockchains like Bitcoin and Ethereum are decentralized ledgers that record transactions in blocks, chained together cryptographically. 
+- Each block contains a hash of the previous block, timestamp, transaction data, and is validated via a consensus protocol like proof-of-work.
+- Benefits include transparency, tamper-resistance, trustless exchange through cryptography and game theory incentives.
+- Downsides include scalability limits, energy costs, and lack of privacy.
+
+Machine learning algorithms:
+- LSTM (Long Short Term Memory) - type of recurrent neural network good for modeling sequential data. Uses memory cells and gates to preserve long-term dependencies.
+- CNN (Convolutional Neural Network) - neural nets that apply convolutional filters to extract spatial features from input data. Used for computer vision and sequence modeling. 
+- Random forest - ensemble method that trains many decision trees on subsets of data and combines predictions. Avoids overfitting and balances accuracy.
+- GAN (Generative Adversarial Network) - two neural nets compete, one generates synthetic data mimicking real data, the other discriminates real/fake.
+
+Sidechain transfers: 
+- Two-way peg enables transferring assets between parent chain and sidechain via locked/unlocked transfers.
+- Drivechains use parent chain miners to vote on sidechain state to validate transfers.
+- Relays directly transmit sidechain blocks to parent chain and vice versa to synchronize state. 
+- Notary schemes rely on a federation of validators to facilitate and approve transfers between chains.
+- HTLCs (Hashed Timelock Contracts) - use hashlocks and timelocks to ensure conditional irreversible transfer of assets across chains.
+
+Let me know if you need any clarification or have additional questions!
+
+Logistic Regression
+SVM classifier
+XGB boost
+Decision tree
+
+
+torch.nn.Linear()
