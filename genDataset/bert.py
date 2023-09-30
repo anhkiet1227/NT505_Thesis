@@ -5,10 +5,12 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 from torch.utils.data import TensorDataset, DataLoader
+from tqdm import tqdm
+
 
 # Load the dataset
-dataset_file = 'synthetic_smart_contract_dataset.csv'
-data = pd.read_csv(dataset_file)
+#dataset_file = './synthetic_smart_contract_dataset.csv'
+data = pd.read_csv('/content/NT505_Thesis/genDataset/synthetic_smart_contract_dataset.csv')
 
 # Features (X) and labels (y)
 X = data['Smart Contract Code']
@@ -34,22 +36,29 @@ y_test = torch.tensor(y_test.values)
 train_dataset = TensorDataset(X_train, attention_mask[:len(X_train)], y_train)
 test_dataset = TensorDataset(X_test, attention_mask[len(X_train):], y_test)
 
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-test_loader = DataLoader(test_dataset, batch_size=32)
+train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=16)
 
 # Load pre-trained BERT model for sequence classification
-model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
+model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2).to('cuda')
 
 # Define optimizer and loss function
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5)
+#optimizer.to('cuda')
 criterion = torch.nn.CrossEntropyLoss()
 
 # Training loop
 model.train()
-for epoch in range(5):  # Adjust the number of epochs as needed
-    for batch in train_loader:
+model.to('cuda')
+
+for epoch in range(1):  # Adjust the number of epochs as needed
+    #for batch in train_loader:q
+    for batch in tqdm(train_loader):        
         optimizer.zero_grad()
         inputs, masks, labels = batch
+        inputs = inputs.to('cuda')
+        masks = masks.to('cuda')
+        labels = labels.to('cuda')
         outputs = model(inputs, attention_mask=masks)[0]
         loss = criterion(outputs, labels)
         loss.backward()
@@ -59,8 +68,11 @@ for epoch in range(5):  # Adjust the number of epochs as needed
 model.eval()
 predictions, true_labels = [], []
 with torch.no_grad():
-    for batch in test_loader:
+    for batch in tqdm(test_loader):
         inputs, masks, labels = batch
+        inputs = inputs.to('cuda')
+        masks = masks.to('cuda')
+        labels = labels.to('cuda')
         outputs = model(inputs, attention_mask=masks)[0]
         _, predicted_labels = torch.max(outputs, 1)
         predictions.extend(predicted_labels.tolist())

@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.metrics import classification_report, multilabel_confusion_matrix
 
@@ -17,15 +17,15 @@ y = data[['Reentrancy Vulnerability', 'Overflow/Underflow Vulnerability', 'Unpro
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Train a Random Forest classifier for each vulnerability
-rf_classifiers = {}
+# Train a Logistic Regression classifier for each vulnerability
+lr_classifiers = {}
 for vulnerability in y.columns:
-    rf_classifier = RandomForestClassifier(random_state=42)
-    rf_classifier.fit(X_train, y_train[vulnerability])
-    rf_classifiers[vulnerability] = rf_classifier
+    lr_classifier = LogisticRegression(random_state=42)
+    lr_classifier.fit(X_train, y_train[vulnerability])
+    lr_classifiers[vulnerability] = lr_classifier
 
 # Predict on the test set for each vulnerability
-y_preds = {vulnerability: classifier.predict(X_test) for vulnerability, classifier in rf_classifiers.items()}
+y_preds = {vulnerability: classifier.predict(X_test) for vulnerability, classifier in lr_classifiers.items()}
 
 # Evaluate the classifiers for each vulnerability
 for vulnerability in y.columns:
