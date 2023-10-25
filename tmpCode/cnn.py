@@ -8,6 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from keras.models import Sequential
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense
 from keras.utils import to_categorical
+import time
 
 # Load the dataset
 dataset_file = 'synthetic_smart_contract_dataset.csv'
@@ -44,13 +45,19 @@ model.add(Dense(2, activation='softmax'))  # Change this to match the number of 
 # Compile the model
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
+start_time = time.time()
 # Train the model
 model.fit(X_train, y_train, epochs=10, batch_size=32)
+end_time = time.time()
+train_time = end_time - start_time
 
+start_time = time.time()
 # Evaluate the model
 y_pred = model.predict(X_test)
 y_pred_classes = np.argmax(y_pred, axis=1)
 y_test_classes = np.argmax(y_test, axis=1)
+end_time = time.time()
+test_time = end_time - start_time
 
 #print('Accuracy:', accuracy_score(y_test_classes, y_pred_classes))
 print('---------- CNN ----------')
@@ -61,3 +68,6 @@ print('F1 Score:', f1_score(y_test_classes, y_pred_classes))
 print('----------------------------------------------')
 print('Classification Report:\n', classification_report(y_test_classes, y_pred_classes))
 print('Confusion Matrix:\n', confusion_matrix(y_test_classes, y_pred_classes))
+print('----------------------------------------------')
+print('Training Time:', train_time)
+print('Testing Time:', test_time)

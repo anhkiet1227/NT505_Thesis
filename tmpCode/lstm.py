@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.metrics import classification_report, confusion_matrix
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
+import time
 
 # Load the dataset
 dataset_file = 'synthetic_smart_contract_dataset.csv'
@@ -36,12 +37,19 @@ model.add(Dense(units=1, activation='sigmoid'))
 # Compile the model
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
+start_time = time.time()
 # Train the model
-model.fit(X_train, y_train, epochs=10, batch_size=32)
+model.fit(X_train, y_train, epochs=5, batch_size=32)
 
+end_time = time.time()
+train_time = end_time - start_time
+
+start_time = time.time()
 # Predict on the test set
 y_pred_prob = model.predict(X_test)
 y_pred = (y_pred_prob > 0.5).astype(int)  # Threshold at 0.5 for binary prediction
+end_time = time.time()
+test_time = end_time - start_time
 
 # Evaluate the model
 #print('Accuracy:', accuracy_score(y_test, y_pred))
@@ -53,3 +61,6 @@ print('F1 Score:', f1_score(y_test, y_pred))
 print('----------------------------------------------')
 print('Classification Report:\n', classification_report(y_test, y_pred))
 print('Confusion Matrix:\n', confusion_matrix(y_test, y_pred))
+print('----------------------------------------------')
+print('Training Time:', train_time)
+print('Testing Time:', test_time)

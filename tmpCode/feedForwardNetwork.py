@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.metrics import classification_report
+import time
 
 # Load the dataset
 dataset_file = 'synthetic_smart_contract_dataset.csv'
@@ -17,15 +18,23 @@ y = data[['Reentrancy Vulnerability', 'Overflow/Underflow Vulnerability', 'Unpro
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+time_start = time.time()
 # Train a Feedforward Neural Network for each vulnerability
 mlp_classifiers = {}
 for vulnerability in y.columns:
     mlp_classifier = MLPClassifier(random_state=42)
     mlp_classifier.fit(X_train, y_train[vulnerability])
     mlp_classifiers[vulnerability] = mlp_classifier
+time_end = time.time()
+train_time = time_end - time_start
+train_time = train_time / 3
 
+time_start = time.time()
 # Predict on the test set for each vulnerability
 y_preds = {vulnerability: classifier.predict(X_test) for vulnerability, classifier in mlp_classifiers.items()}
+time_end = time.time()
+test_time = time_end - time_start
+test_time = test_time / 3
 
 # Evaluate the classifiers for each vulnerability
 for vulnerability in y.columns:
@@ -35,3 +44,7 @@ for vulnerability in y.columns:
     print('Recall:', recall_score(y_test[vulnerability], y_preds[vulnerability]))
     print('F1 Score:', f1_score(y_test[vulnerability], y_preds[vulnerability]))
     print('Classification Report:\n', classification_report(y_test[vulnerability], y_preds[vulnerability]))
+
+print('----------------------------------------------')
+print('Training Time:', train_time)
+print('Testing Time:', test_time)
