@@ -5,7 +5,7 @@ from transformers import RobertaForSequenceClassification, RobertaTokenizer
 import torch
 
 
-def detect_contract_type(token_ids, model_path='./model96.bin'):
+def detect_contract_type(token_ids, model_path):
     """
     Detects whether a contract is benign or malicious based on its token IDs.
 
@@ -33,7 +33,7 @@ def detect_contract_type(token_ids, model_path='./model96.bin'):
         predictions = torch.argmax(logits, dim=-1)
 
     # Convert the prediction to a contract type
-    contract_type = 'benign' if predictions.item() == 0 else 'malicious'
+    contract_type = 'malicious' if predictions.item() == 0 else 'benign'
 
     return contract_type
 
@@ -50,7 +50,7 @@ tokens = tokenizer(contract_code)
 token_ids = tokenizer.convert_tokens_to_ids(tokens)
 
 # Detect the contract type
-contract_type = detect_contract_type(token_ids, model_path='./model96.bin')
+contract_type = detect_contract_type(token_ids, model_path='./model/model.bin')
 
 # Print the result
 print(contract_type)
