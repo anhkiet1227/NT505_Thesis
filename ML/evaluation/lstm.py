@@ -5,7 +5,7 @@ from tensorflow.keras.layers import LSTM, Dense, Embedding
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
 # Load the data
 df = pd.read_csv('output_with_labels.csv')
@@ -36,13 +36,17 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 # Train the model
 model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.1)
 
+# save the model
+model.save('./model/lstm.h5')
+
 y_pred = model.predict(X_test)
 y_pred = (y_pred > 0.5).astype('int32')  # Convert probabilities to binary predictions
 
 # Calculate accuracy
-accuracy = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {accuracy * 100:.2f}%")
+print(f"Accuracy: {accuracy_score(y_test, y_pred) * 100:.4f}%")
+print(f"Precision: {precision_score(y_test, y_pred) * 100:.4f}%")
+print(f"Recall: {recall_score(y_test, y_pred) * 100:.4f}%")
+print(f"F1: {f1_score(y_test, y_pred) * 100:.4f}%")
 
-# Generate and print classification report
-report = classification_report(y_test, y_pred, target_names=label_encoder.classes_)
-print(report)
+# Print classification report
+print(classification_report(y_test, y_pred, target_names=label_encoder.classes_))
