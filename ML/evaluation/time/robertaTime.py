@@ -40,7 +40,7 @@ def detect_contract_type(token_ids, model_path):
 
 
 # Read Solidity smart contract file
-contract_file_path = './Contract1.sol'
+contract_file_path = './Contract2.sol'
 with open(contract_file_path, 'r') as file:
     contract_code = file.read()
 
@@ -50,7 +50,7 @@ tokens = tokenizer(contract_code)
 token_ids = tokenizer.convert_tokens_to_ids(tokens)
 
 # Detect the contract type
-contract_type = detect_contract_type(token_ids, model_path='./model/model.bin')
+contract_type = detect_contract_type(token_ids, model_path='../bin/model.bin')
 
 # Print the result
 print(contract_type)
