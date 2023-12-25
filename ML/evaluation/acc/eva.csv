@@ -1,3 +1,10 @@
-model,accuracy,precision,recall,f1score,timePerformance
-decisiontree,0.96,1.00,93.44,96.61,0.00
-lstm,0.55,0.55,1.00,0.71,0.00
+Model,Accuraccy,Recall,Precision,F1
+DecisionTree,0.8519,0.8209,0.8730,0.8462
+RandomForest,0.7312,0.6324,1.0000,0.7748
+XGBoost,0.6211,0.5485,0.9924,0.7065
+SVM,0.8458,0.7551,0.9911,0.8571
+LogisticRegression,0.9000,0.9071,0.8864,0.8967
+CNN,0.9000,0.8235,1.0000,0.9032
+lstm,0.5500,0.5500,1.0000,0.7100
+FNN,0.8125,0.8636,0.7037,0.7755
+RoBERTa,0.9667,1.0000,0.8750,0.9333

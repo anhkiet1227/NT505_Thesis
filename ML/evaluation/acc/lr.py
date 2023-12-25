@@ -34,7 +34,7 @@ model.fit(X_train, y_train)
 
 # save the model
 import joblib
-joblib.dump(model, 'logistic_regression.joblib')
+joblib.dump(model, '../bin/logistic_regression.joblib')
 
 # Predict on the test set
 y_pred = model.predict(X_test)

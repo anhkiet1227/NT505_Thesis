@@ -33,7 +33,7 @@ model.fit(X_train, y_train)
 
 # save the model
 import joblib
-joblib.dump(model, './bin/random_forest.joblib')
+joblib.dump(model, '../bin/random_forest.joblib')
 
 # Predict on the test set
 y_pred = model.predict(X_test)

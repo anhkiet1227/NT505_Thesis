@@ -34,7 +34,7 @@ model.fit(X_train, y_train)
 
 # save the model
 import joblib
-joblib.dump(model, './bin/decision_tree.joblib')
+joblib.dump(model, '../bin/decision_tree.joblib')
 
 # Predict on the test set
 y_pred = model.predict(X_test)

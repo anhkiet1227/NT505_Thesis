@@ -37,7 +37,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.1)
 
 # save the model
-model.save('./bin/lstm.h5')
+model.save('../bin/lstm.h5')
 
 y_pred = model.predict(X_test)
 y_pred = (y_pred > 0.5).astype('int32')  # Convert probabilities to binary predictions
