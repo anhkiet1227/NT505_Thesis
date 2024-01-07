@@ -1,5 +1,5 @@
 import time
-startTime = time.time()
+
 import joblib
 from transformers import RobertaTokenizer
 import numpy as np
@@ -37,6 +37,8 @@ def detect_contract_type(token_ids, model_path, max_sequence_length=601):
     contract_type = 'malicious' if predictions.item() == 0 else 'benign'
 
     return contract_type
+
+startTime = time.time()
 
 # Read Solidity smart contract file
 contract_file_path = './Contract2.sol'

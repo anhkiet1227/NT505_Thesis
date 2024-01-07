@@ -1,5 +1,5 @@
 import time
-startTime = time.time()
+
 
 from transformers import RobertaForSequenceClassification, RobertaTokenizer
 import torch
@@ -38,6 +38,7 @@ def detect_contract_type(token_ids, model_path):
     return contract_type
 
 
+startTime = time.time()
 
 # Read Solidity smart contract file
 contract_file_path = './Contract2.sol'

@@ -1,10 +1,12 @@
 import time
-startTime = time.time()
+
 
 import torch
 from transformers import RobertaTokenizer
 from keras.models import load_model
 import numpy as np
+
+startTime = time.time()
 
 def detect_contract_type(token_ids, model_path, max_sequence_length=601):
     """
@@ -40,6 +42,7 @@ def detect_contract_type(token_ids, model_path, max_sequence_length=601):
     contract_type = 'malicious' if predictions.item() == 0 else 'benign'
 
     return contract_type
+
 
 # Read Solidity smart contract file
 contract_file_path = './Contract2.sol'
