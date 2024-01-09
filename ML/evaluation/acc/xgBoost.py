@@ -24,7 +24,7 @@ max_length = max(len(tokens) for tokens in token_ids)
 padded_token_ids = pad_sequences(token_ids, maxlen=max_length, padding='post')
 
 # Split the data
-X_train, X_test, y_train, y_test = train_test_split(padded_token_ids, encoded_labels, test_size=0.95, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(padded_token_ids, encoded_labels, test_size=0.2, random_state=42)
 # Load the data, encode labels, pad sequences, and split the data
 # ... (same as your previous code)
 
