@@ -10,7 +10,7 @@ As blockchain technology continues to evolve, the need for interoperability amon
 
 - **Sidechain Integration**: ChainSniper utilizes a sidechain architecture to facilitate secure inter-blockchain data exchange, enabling seamless communication and transfer of smart contract information between heterogeneous networks.
 
-- **Machine Learning Models**: The system incorporates various machine learning and deep learning models, including Decision Trees, Random Forests, XGBoost, CNN, LSTM, SVMs with different kernels, Logistic Regression, Feed Forward Neural Networks, and RoBERTa. These models are trained on a novel dataset, "CrossChainSentinel," to accurately detect vulnerabilities in cross-chain smart contracts.
+- **Machine Learning Models**: The system incorporates various machine learning and deep learning models, including Decision Trees, Random Forests, XGBoost, CNN, LSTM, SVMs with different kernels, Logistic Regression, Feed Forward Neural Networks, and RoBERTa. These models are trained on a novel dataset, "CrossChainSentinel", to accurately detect vulnerabilities in cross-chain smart contracts.
 
 - **CrossChainSentinel Dataset**: A comprehensive dataset comprising 300 manually labeled smart contract samples, including 158 benign contracts and 142 contracts with injected vulnerabilities such as reentrancy flaws, overflow and underflow bugs, and unprotected ether withdrawal issues.
 
