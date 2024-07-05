@@ -1,0 +1,92 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: .\main.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: biblography.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty publisher in atzei2017survey
+Warning--empty address in atzei2017survey
+Warning--no number and no volume in hardjono2021blockchain
+Warning--page numbers missing in both pages and numpages fields in hardjono2021blockchain
+Warning--empty publisher in haugum2022security
+Warning--empty address in haugum2022security
+Warning--no number and no volume in huang2018hunting
+Warning--page numbers missing in both pages and numpages fields in huang2018hunting
+Warning--empty publisher in jiang2018contractfuzzer
+Warning--empty address in jiang2018contractfuzzer
+Warning--empty publisher in lai2020static
+Warning--empty address in lai2020static
+Warning--no number and no volume in lan2021horizon
+Warning--page numbers missing in both pages and numpages fields in lan2021horizon
+Warning--empty publisher in liao2019soliaudit
+Warning--empty address in liao2019soliaudit
+Warning--no number and no volume in mao2022survey
+Warning--page numbers missing in both pages and numpages fields in mao2022survey
+Warning--no number and no volume in miraz2019atomic
+Warning--page numbers missing in both pages and numpages fields in miraz2019atomic
+Warning--no number and no volume in parizi2018empirical
+Warning--page numbers missing in both pages and numpages fields in parizi2018empirical
+Warning--no number and no volume in praitheeshan2019security
+Warning--page numbers missing in both pages and numpages fields in praitheeshan2019security
+Warning--no number and no volume in qin2018overview
+Warning--no number and no volume in rodler2018sereum
+Warning--page numbers missing in both pages and numpages fields in rodler2018sereum
+Warning--empty publisher in staderini2020classification
+Warning--empty address in staderini2020classification
+Warning--empty publisher in wang2018overview
+Warning--empty address in wang2018overview
+Warning--empty publisher in xie2022zkbridge
+Warning--empty address in xie2022zkbridge
+Warning--empty publisher in zhang2022xscope
+Warning--empty address in zhang2022xscope
+You've used 32 entries,
+            5981 wiz_defined-function locations,
+            1650 strings with 24956 characters,
+and the built_in function-call counts, 38717 in all, are:
+= -- 5292
+> -- 1375
+< -- 0
++ -- 465
+- -- 469
+* -- 2714
+:= -- 3700
+add.period$ -- 160
+call.type$ -- 32
+change.case$ -- 262
+chr.to.int$ -- 115
+cite$ -- 67
+duplicate$ -- 3239
+empty$ -- 2264
+format.name$ -- 561
+if$ -- 9781
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 129
+newline$ -- 293
+num.names$ -- 223
+pop$ -- 1366
+preamble$ -- 1
+purify$ -- 516
+quote$ -- 0
+skip$ -- 1134
+stack$ -- 0
+substring$ -- 2609
+swap$ -- 347
+text.length$ -- 68
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 660
+warning$ -- 35
+while$ -- 196
+width$ -- 0
+write$ -- 640
+(There were 35 warnings)

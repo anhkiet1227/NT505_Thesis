@@ -1,0 +1,434 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{32}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Atzei et~al\mbox{.}(2017)]%
+        {atzei2017survey}
+\bibfield{author}{\bibinfo{person}{Nicola Atzei}, \bibinfo{person}{Massimo
+  Bartoletti}, {and} \bibinfo{person}{Tiziana Cimoli}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{A survey of attacks on ethereum smart contracts
+  (sok)}. In \bibinfo{booktitle}{\emph{Principles of Security and Trust: 6th
+  International Conference, POST 2017, Held as Part of the European Joint
+  Conferences on Theory and Practice of Software, ETAPS 2017, Uppsala, Sweden,
+  April 22-29, 2017, Proceedings 6}}. Springer, \bibinfo{pages}{164--186}.
+\newblock
+
+
+\bibitem[Badillo et~al\mbox{.}(2020)]%
+        {badillo2020introduction}
+\bibfield{author}{\bibinfo{person}{Solveig Badillo}, \bibinfo{person}{Balazs
+  Banfai}, \bibinfo{person}{Fabian Birzele}, \bibinfo{person}{Iakov~I Davydov},
+  \bibinfo{person}{Lucy Hutchinson}, \bibinfo{person}{Tony Kam-Thong},
+  \bibinfo{person}{Juliane Siebourg-Polster}, \bibinfo{person}{Bernhard
+  Steiert}, {and} \bibinfo{person}{Jitao~David Zhang}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{An introduction to machine learning}.
+\newblock \bibinfo{journal}{\emph{Clinical pharmacology \& therapeutics}}
+  \bibinfo{volume}{107}, \bibinfo{number}{4} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{871--885}.
+\newblock
+
+
+\bibitem[Deng et~al\mbox{.}(2023)]%
+        {deng2023smart}
+\bibfield{author}{\bibinfo{person}{Weichu Deng}, \bibinfo{person}{Huanchun
+  Wei}, \bibinfo{person}{Teng Huang}, \bibinfo{person}{Cong Cao},
+  \bibinfo{person}{Yun Peng}, {and} \bibinfo{person}{Xuan Hu}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Smart contract vulnerability detection based on
+  deep learning and multimodal decision fusion}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{23},
+  \bibinfo{number}{16} (\bibinfo{year}{2023}), \bibinfo{pages}{7246}.
+\newblock
+
+
+\bibitem[Han et~al\mbox{.}(2023)]%
+        {han2023survey}
+\bibfield{author}{\bibinfo{person}{Panpan Han}, \bibinfo{person}{Zheng Yan},
+  \bibinfo{person}{Wenxiu Ding}, \bibinfo{person}{Shufan Fei}, {and}
+  \bibinfo{person}{Zhiguo Wan}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A survey on cross-chain technologies}.
+\newblock \bibinfo{journal}{\emph{Distributed Ledger Technologies: Research and
+  Practice}} \bibinfo{volume}{2}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{1--30}.
+\newblock
+
+
+\bibitem[Hardjono(2021)]%
+        {hardjono2021blockchain}
+\bibfield{author}{\bibinfo{person}{Thomas Hardjono}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Blockchain gateways, bridges and delegated
+  hash-locks}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2102.03933}}
+  (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Haugum et~al\mbox{.}(2022)]%
+        {haugum2022security}
+\bibfield{author}{\bibinfo{person}{Terje Haugum}, \bibinfo{person}{Bj{\o}rnar
+  Hoff}, \bibinfo{person}{Mohammed Alsadi}, {and} \bibinfo{person}{Jingyue
+  Li}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Security and Privacy Challenges in Blockchain
+  Interoperability-A Multivocal Literature Review}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 26th International Conference on
+  Evaluation and Assessment in Software Engineering}}.
+  \bibinfo{pages}{347--356}.
+\newblock
+
+
+\bibitem[He et~al\mbox{.}(2020)]%
+        {he2020smart}
+\bibfield{author}{\bibinfo{person}{Daojing He}, \bibinfo{person}{Zhi Deng},
+  \bibinfo{person}{Yuxing Zhang}, \bibinfo{person}{Sammy Chan},
+  \bibinfo{person}{Yao Cheng}, {and} \bibinfo{person}{Nadra Guizani}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Smart contract vulnerability analysis and security
+  audit}.
+\newblock \bibinfo{journal}{\emph{IEEE Network}} \bibinfo{volume}{34},
+  \bibinfo{number}{5} (\bibinfo{year}{2020}), \bibinfo{pages}{276--282}.
+\newblock
+
+
+\bibitem[Hei et~al\mbox{.}(2022)]%
+        {hei2022practical}
+\bibfield{author}{\bibinfo{person}{Yiming Hei}, \bibinfo{person}{Dawei Li},
+  \bibinfo{person}{Chi Zhang}, \bibinfo{person}{Jianwei Liu},
+  \bibinfo{person}{Yizhong Liu}, {and} \bibinfo{person}{Qianhong Wu}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Practical AgentChain: A compatible cross-chain
+  exchange system}.
+\newblock \bibinfo{journal}{\emph{Future Generation Computer Systems}}
+  \bibinfo{volume}{130} (\bibinfo{year}{2022}), \bibinfo{pages}{207--218}.
+\newblock
+
+
+\bibitem[Huang et~al\mbox{.}(2022)]%
+        {huang2022smart}
+\bibfield{author}{\bibinfo{person}{Jing Huang}, \bibinfo{person}{Kuo Zhou},
+  \bibinfo{person}{Ao Xiong}, {and} \bibinfo{person}{Dongmeng Li}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Smart contract vulnerability detection model based
+  on multi-task learning}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{22},
+  \bibinfo{number}{5} (\bibinfo{year}{2022}), \bibinfo{pages}{1829}.
+\newblock
+
+
+\bibitem[Huang(2018)]%
+        {huang2018hunting}
+\bibfield{author}{\bibinfo{person}{TonTon Hsien-De Huang}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Hunting the ethereum smart contract: Color-inspired
+  inspection of potential attacks}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1807.01868}}
+  (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[Jiang et~al\mbox{.}(2018)]%
+        {jiang2018contractfuzzer}
+\bibfield{author}{\bibinfo{person}{Bo Jiang}, \bibinfo{person}{Ye Liu}, {and}
+  \bibinfo{person}{Wing~Kwong Chan}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Contractfuzzer: Fuzzing smart contracts for
+  vulnerability detection}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  33rd ACM/IEEE International Conference on Automated Software Engineering}}.
+  \bibinfo{pages}{259--269}.
+\newblock
+
+
+\bibitem[Krichen(2023)]%
+        {krichen2023strengthening}
+\bibfield{author}{\bibinfo{person}{Moez Krichen}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Strengthening the security of smart contracts
+  through the power of artificial intelligence}.
+\newblock \bibinfo{journal}{\emph{Computers}} \bibinfo{volume}{12},
+  \bibinfo{number}{5} (\bibinfo{year}{2023}), \bibinfo{pages}{107}.
+\newblock
+
+
+\bibitem[Kumarathunga et~al\mbox{.}(2022)]%
+        {Kumarathunga_Calheiros_Ginige_2022}
+\bibfield{author}{\bibinfo{person}{Malni Kumarathunga},
+  \bibinfo{person}{Rodrigo~N. Calheiros}, {and} \bibinfo{person}{Athula
+  Ginige}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Sustainable Microfinance Outreach for Farmers with
+  Blockchain Cryptocurrency and Smart Contracts}.
+\newblock , \bibinfo{numpages}{9–14}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.7763/ijcte.2022.v14.1304}
+\showDOI{\tempurl}
+
+
+\bibitem[Kushwaha et~al\mbox{.}(2022)]%
+        {kushwaha2022systematic}
+\bibfield{author}{\bibinfo{person}{Satpal~Singh Kushwaha},
+  \bibinfo{person}{Sandeep Joshi}, \bibinfo{person}{Dilbag Singh},
+  \bibinfo{person}{Manjit Kaur}, {and} \bibinfo{person}{Heung-No Lee}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Systematic review of security vulnerabilities in
+  ethereum blockchain smart contract}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}}  \bibinfo{volume}{10}
+  (\bibinfo{year}{2022}), \bibinfo{pages}{6605--6621}.
+\newblock
+
+
+\bibitem[Lai and Luo(2020)]%
+        {lai2020static}
+\bibfield{author}{\bibinfo{person}{Enmei Lai} {and} \bibinfo{person}{Wenjun
+  Luo}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Static analysis of integer overflow of smart
+  contracts in ethereum}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020
+  4th International Conference on Cryptography, Security and Privacy}}.
+  \bibinfo{pages}{110--115}.
+\newblock
+
+
+\bibitem[Lan et~al\mbox{.}(2021)]%
+        {lan2021horizon}
+\bibfield{author}{\bibinfo{person}{Rongjian Lan}, \bibinfo{person}{Ganesha
+  Upadhyaya}, \bibinfo{person}{Stephen Tse}, {and} \bibinfo{person}{Mahdi
+  Zamani}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Horizon: A gas-efficient, trustless bridge for
+  cross-chain transactions}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2101.06000}}
+  (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Liao et~al\mbox{.}(2019)]%
+        {liao2019soliaudit}
+\bibfield{author}{\bibinfo{person}{Jian-Wei Liao}, \bibinfo{person}{Tsung-Ta
+  Tsai}, \bibinfo{person}{Chia-Kang He}, {and} \bibinfo{person}{Chin-Wei
+  Tien}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Soliaudit: Smart contract vulnerability assessment
+  based on machine learning and fuzz testing}. In
+  \bibinfo{booktitle}{\emph{2019 Sixth International Conference on Internet of
+  Things: Systems, Management and Security (IOTSMS)}}. IEEE,
+  \bibinfo{pages}{458--465}.
+\newblock
+
+
+\bibitem[Mao et~al\mbox{.}(2022)]%
+        {mao2022survey}
+\bibfield{author}{\bibinfo{person}{Hanyu Mao}, \bibinfo{person}{Tiezheng Nie},
+  \bibinfo{person}{Hao Sun}, \bibinfo{person}{Derong Shen}, {and}
+  \bibinfo{person}{Ge Yu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A survey on cross-chain technology: Challenges,
+  development, and prospect}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Miraz and Donald(2019)]%
+        {miraz2019atomic}
+\bibfield{author}{\bibinfo{person}{Mahdi~H Miraz} {and}
+  \bibinfo{person}{David~C Donald}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Atomic cross-chain swaps: development, trajectory
+  and potential of non-monetary digital token swap facilities}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1902.04471}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Parizi et~al\mbox{.}(2018)]%
+        {parizi2018empirical}
+\bibfield{author}{\bibinfo{person}{Reza~M Parizi}, \bibinfo{person}{Ali
+  Dehghantanha}, \bibinfo{person}{Kim-Kwang~Raymond Choo}, {and}
+  \bibinfo{person}{Amritraj Singh}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Empirical vulnerability analysis of automated smart
+  contracts security testing on blockchains}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1809.02702}}
+  (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[Patel and Patel(2023)]%
+        {Patel_Patel_2023}
+\bibfield{author}{\bibinfo{person}{Parin Patel} {and} \bibinfo{person}{Hiren
+  Patel}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Achieving A Secure Cloud Storage Mechanism Using
+  Blockchain Technology}.
+\newblock , \bibinfo{numpages}{130–142}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.7763/ijcte.2023.v15.1342}
+\showDOI{\tempurl}
+
+
+\bibitem[Praitheeshan et~al\mbox{.}(2019)]%
+        {praitheeshan2019security}
+\bibfield{author}{\bibinfo{person}{Purathani Praitheeshan},
+  \bibinfo{person}{Lei Pan}, \bibinfo{person}{Jiangshan Yu},
+  \bibinfo{person}{Joseph Liu}, {and} \bibinfo{person}{Robin Doss}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Security analysis methods on ethereum smart
+  contract vulnerabilities: a survey}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1908.08605}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Qin and Gervais(2018)]%
+        {qin2018overview}
+\bibfield{author}{\bibinfo{person}{Kaihua Qin} {and} \bibinfo{person}{Arthur
+  Gervais}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{An overview of blockchain scalability,
+  interoperability and sustainability}.
+\newblock \bibinfo{journal}{\emph{Hochschule Luzern Imperial College London
+  Liquidity Network}} (\bibinfo{year}{2018}), \bibinfo{pages}{1--15}.
+\newblock
+
+
+\bibitem[Rodler et~al\mbox{.}(2018)]%
+        {rodler2018sereum}
+\bibfield{author}{\bibinfo{person}{Michael Rodler}, \bibinfo{person}{Wenting
+  Li}, \bibinfo{person}{Ghassan~O Karame}, {and} \bibinfo{person}{Lucas Davi}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Sereum: Protecting existing smart contracts against
+  re-entrancy attacks}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1812.05934}}
+  (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[Sayeed et~al\mbox{.}(2020)]%
+        {sayeed2020smart}
+\bibfield{author}{\bibinfo{person}{Sarwar Sayeed}, \bibinfo{person}{Hector
+  Marco-Gisbert}, {and} \bibinfo{person}{Tom Caira}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Smart contract: Attacks and protections}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}}  \bibinfo{volume}{8}
+  (\bibinfo{year}{2020}), \bibinfo{pages}{24416--24427}.
+\newblock
+
+
+\bibitem[Singh et~al\mbox{.}(2020)]%
+        {singh2020sidechain}
+\bibfield{author}{\bibinfo{person}{Amritraj Singh}, \bibinfo{person}{Kelly
+  Click}, \bibinfo{person}{Reza~M Parizi}, \bibinfo{person}{Qi Zhang},
+  \bibinfo{person}{Ali Dehghantanha}, {and} \bibinfo{person}{Kim-Kwang~Raymond
+  Choo}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Sidechain technologies in blockchain networks: An
+  examination and state-of-the-art review}.
+\newblock \bibinfo{journal}{\emph{Journal of Network and Computer
+  Applications}}  \bibinfo{volume}{149} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{102471}.
+\newblock
+
+
+\bibitem[Staderini et~al\mbox{.}(2020)]%
+        {staderini2020classification}
+\bibfield{author}{\bibinfo{person}{Mirko Staderini}, \bibinfo{person}{Caterina
+  Palli}, {and} \bibinfo{person}{Andrea Bondavalli}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Classification of ethereum vulnerabilities and
+  their propagations}. In \bibinfo{booktitle}{\emph{2020 Second International
+  Conference on Blockchain Computing and Applications (BCCA)}}. IEEE,
+  \bibinfo{pages}{44--51}.
+\newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2018)]%
+        {wang2018overview}
+\bibfield{author}{\bibinfo{person}{Shuai Wang}, \bibinfo{person}{Yong Yuan},
+  \bibinfo{person}{Xiao Wang}, \bibinfo{person}{Juanjuan Li},
+  \bibinfo{person}{Rui Qin}, {and} \bibinfo{person}{Fei-Yue Wang}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{An overview of smart contract: architecture,
+  applications, and future trends}. In \bibinfo{booktitle}{\emph{2018 IEEE
+  Intelligent Vehicles Symposium (IV)}}. IEEE, \bibinfo{pages}{108--113}.
+\newblock
+
+
+\bibitem[Xie et~al\mbox{.}(2022)]%
+        {xie2022zkbridge}
+\bibfield{author}{\bibinfo{person}{Tiancheng Xie}, \bibinfo{person}{Jiaheng
+  Zhang}, \bibinfo{person}{Zerui Cheng}, \bibinfo{person}{Fan Zhang},
+  \bibinfo{person}{Yupeng Zhang}, \bibinfo{person}{Yongzheng Jia},
+  \bibinfo{person}{Dan Boneh}, {and} \bibinfo{person}{Dawn Song}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{zkbridge: Trustless cross-chain bridges made
+  practical}. In \bibinfo{booktitle}{\emph{Proceedings of the 2022 ACM SIGSAC
+  Conference on Computer and Communications Security}}.
+  \bibinfo{pages}{3003--3017}.
+\newblock
+
+
+\bibitem[Xu et~al\mbox{.}(2021)]%
+        {xu2021novel}
+\bibfield{author}{\bibinfo{person}{Yingjie Xu}, \bibinfo{person}{Gengran Hu},
+  \bibinfo{person}{Lin You}, {and} \bibinfo{person}{Chengtang Cao}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A novel machine learning-based analysis model for
+  smart contract vulnerability}.
+\newblock \bibinfo{journal}{\emph{Security and Communication Networks}}
+  \bibinfo{volume}{2021} (\bibinfo{year}{2021}), \bibinfo{pages}{1--12}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2022b)]%
+        {zhang2022xscope}
+\bibfield{author}{\bibinfo{person}{Jiashuo Zhang}, \bibinfo{person}{Jianbo
+  Gao}, \bibinfo{person}{Yue Li}, \bibinfo{person}{Ziming Chen},
+  \bibinfo{person}{Zhi Guan}, {and} \bibinfo{person}{Zhong Chen}.}
+  \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{Xscope: Hunting for cross-chain bridge attacks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 37th IEEE/ACM International
+  Conference on Automated Software Engineering}}. \bibinfo{pages}{1--4}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2022a)]%
+        {zhang2022cbgru}
+\bibfield{author}{\bibinfo{person}{Lejun Zhang}, \bibinfo{person}{Weijie Chen},
+  \bibinfo{person}{Weizheng Wang}, \bibinfo{person}{Zilong Jin},
+  \bibinfo{person}{Chunhui Zhao}, \bibinfo{person}{Zhennao Cai}, {and}
+  \bibinfo{person}{Huiling Chen}.} \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{Cbgru: A detection method of smart contract
+  vulnerability based on a hybrid model}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{22},
+  \bibinfo{number}{9} (\bibinfo{year}{2022}), \bibinfo{pages}{3577}.
+\newblock
+
+
+\end{thebibliography}
